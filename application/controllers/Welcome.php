@@ -8,6 +8,9 @@ class Welcome extends MY_Controller {
     {
         //$this->load->view('welcome');
         $this->data['pagebody'] = 'welcome';
+        $this->data['hnav_home'] = 'class="selected"';
+        $this->data['fnav_home'] = 'class="active"';
+        $this->data['curpage'] = '';
         $this->render();
     }
 }

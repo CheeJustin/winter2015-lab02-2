@@ -8,6 +8,9 @@ class Foods extends MY_Controller {
     {
         //$this->load->view('foods');
         $this->data['pagebody'] = 'foods';
+        $this->data['hnav_foods'] = 'class="selected"';
+        $this->data['fnav_foods'] = 'class="active"';
+        $this->data['curpage'] = 'Foods - ';
         $this->render();
     }
 }

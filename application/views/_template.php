@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>{pagetitle}</title>
+	<title>{curpage}{pagetitle}</title>
 	<link rel="stylesheet" href="public/css/style.css" type="text/css">
 </head>
 <body>
@@ -15,25 +15,25 @@
 				</div>
 				<div id="navigation">
 					<ul>
-						<li class="selected">
+						<li {hnav_home}>
 							<a href="/">Home</a>
 						</li>
-						<li>
+						<li {hnav_about}>
 							<a href="/About">About</a>
 						</li>
-						<li>
+						<li {hnav_rooms}>
 							<a href="/Rooms">Rooms</a>
 						</li>
-						<li>
+						<li {hnav_dives}>
 							<a href="/Dives">Dive Site</a>
 						</li>
-						<li>
+						<li {hnav_foods}>
 							<a href="/Foods">Food</a>
 						</li>
-						<li>
+						<li {hnav_news}>
 							<a href="/News">News</a>
 						</li>
-						<li>
+						<li {hnav_contact}>
 							<a href="/Contact">Contact</a>
 						</li>
 					</ul>
@@ -46,25 +46,25 @@
 		<div id="footer">
 			<div>
 				<ul class="navigation">
-					<li class="active">
+					<li {fnav_home}>
 						<a href="/">Home</a>
 					</li>
-					<li>
+					<li {fnav_about}>
 						<a href="/About">About</a>
 					</li>
-					<li>
+					<li {fnav_rooms}>
 						<a href="/Rooms">Rooms</a>
 					</li>
-					<li>
+					<li {fnav_dives}>
 						<a href="/Dives">Dive Site</a>
 					</li>
-					<li>
+					<li {fnav_foods}>
 						<a href="/Foods">Food</a>
 					</li>
-					<li>
+					<li {fnav_news}>
 						<a href="/News">News</a>
 					</li>
-					<li>
+					<li {fnav_contact}>
 						<a href="/Contact">Contact</a>
 					</li>
 				</ul>

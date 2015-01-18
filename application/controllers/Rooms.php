@@ -8,6 +8,9 @@ class Rooms extends MY_Controller {
     {
         //$this->load->view('rooms');
         $this->data['pagebody'] = 'rooms';
+        $this->data['hnav_rooms'] = 'class="selected"';
+        $this->data['fnav_rooms'] = 'class="active"';
+        $this->data['curpage'] = 'Rooms - ';
         $this->render();
     }
 }

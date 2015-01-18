@@ -10,6 +10,7 @@ class MY_Controller extends CI_Controller {
     protected $choices = array(// our menu navbar
 	'Home' => '/', 'About' => '/about', 'Rooms' => '/rooms', 'Dives' => 'dives', 'Foods' => 'foods', 'New' => 'new', 'Contact' => 'contact'
     );
+    
     /**
      * Constructor.
      * Establish view parameters & load common helpers
@@ -18,6 +19,7 @@ class MY_Controller extends CI_Controller {
     {
 	parent::__construct();
 	$this->data = array();
+        $this->data['curpage'] = '';
 	$this->data['pagetitle'] = 'Bhaccasyoniztas Beach Resort Website Template';
     }
     /**

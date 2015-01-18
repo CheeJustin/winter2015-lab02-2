@@ -8,6 +8,9 @@ class News extends MY_Controller {
     {
         //$this->load->view('news');
         $this->data['pagebody'] = 'news';
+        $this->data['hnav_news'] = 'class="selected"';
+        $this->data['fnav_news'] = 'class="active"';
+        $this->data['curpage'] = 'News - ';
         $this->render();
     }
 }

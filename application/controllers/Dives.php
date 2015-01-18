@@ -8,6 +8,9 @@ class Dives extends MY_Controller {
     {
         //$this->load->view('dives');
         $this->data['pagebody'] = 'dives';
+        $this->data['hnav_dives'] = 'class="selected"';
+        $this->data['fnav_dives'] = 'class="active"';
+        $this->data['curpage'] = 'Dive Sites - ';
         $this->render();
     }
 }
