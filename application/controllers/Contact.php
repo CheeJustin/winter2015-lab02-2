@@ -11,6 +11,6 @@ class Contact extends MY_Controller {
         $this->data['hnav_contact'] = 'class="selected"';
         $this->data['fnav_contact'] = 'class="active"';
         $this->data['curpage'] = 'Contact - ';
-        $this->render('Contact');
+        $this->render();
     }
 }
